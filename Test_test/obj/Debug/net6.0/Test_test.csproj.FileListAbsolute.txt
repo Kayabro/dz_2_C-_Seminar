@@ -1,0 +1,15 @@
+C:\Users\Sjado\Desktop\курсы\C#\Test_test\bin\Debug\net6.0\Test_test.exe
+C:\Users\Sjado\Desktop\курсы\C#\Test_test\bin\Debug\net6.0\Test_test.deps.json
+C:\Users\Sjado\Desktop\курсы\C#\Test_test\bin\Debug\net6.0\Test_test.runtimeconfig.json
+C:\Users\Sjado\Desktop\курсы\C#\Test_test\bin\Debug\net6.0\Test_test.dll
+C:\Users\Sjado\Desktop\курсы\C#\Test_test\bin\Debug\net6.0\Test_test.pdb
+C:\Users\Sjado\Desktop\курсы\C#\Test_test\obj\Debug\net6.0\Test_test.csproj.AssemblyReference.cache
+C:\Users\Sjado\Desktop\курсы\C#\Test_test\obj\Debug\net6.0\Test_test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sjado\Desktop\курсы\C#\Test_test\obj\Debug\net6.0\Test_test.AssemblyInfoInputs.cache
+C:\Users\Sjado\Desktop\курсы\C#\Test_test\obj\Debug\net6.0\Test_test.AssemblyInfo.cs
+C:\Users\Sjado\Desktop\курсы\C#\Test_test\obj\Debug\net6.0\Test_test.csproj.CoreCompileInputs.cache
+C:\Users\Sjado\Desktop\курсы\C#\Test_test\obj\Debug\net6.0\Test_test.dll
+C:\Users\Sjado\Desktop\курсы\C#\Test_test\obj\Debug\net6.0\refint\Test_test.dll
+C:\Users\Sjado\Desktop\курсы\C#\Test_test\obj\Debug\net6.0\Test_test.pdb
+C:\Users\Sjado\Desktop\курсы\C#\Test_test\obj\Debug\net6.0\Test_test.genruntimeconfig.cache
+C:\Users\Sjado\Desktop\курсы\C#\Test_test\obj\Debug\net6.0\ref\Test_test.dll
