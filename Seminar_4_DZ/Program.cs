@@ -45,3 +45,15 @@
 
 // Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран. (числа берете любые)
 
+// Console.WriteLine($"Массив:  [{String.Join(" , ",NewList())}]");
+
+// int[] NewList()
+// {
+//     int[] list = new int[8];
+//     int len  = list.Length;
+//     for (int i = 0; i < len; i ++)
+//     {
+//         list[i] = new Random().Next(1,9);   
+//     }
+//     return list;
+// }
