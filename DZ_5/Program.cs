@@ -59,50 +59,89 @@
 
 
 
-// Задача 37
-int[] array = NewList();
+// // Задача 37
+// int[] array = NewList();
 
-Console.WriteLine($" произведение пар чисел в одномерном массиве [{String.Join(" , ", array)}], будет  [{String.Join(" , ", PairedNumbers(array))}]");
+// Console.WriteLine($" произведение пар чисел в одномерном массиве [{String.Join(" , ", array)}], будет  [{String.Join(" , ", PairedNumbers(array))}]");
 
-// ----------------------------------Методы-------------
+// // ----------------------------------Методы-------------
 
-int[]  NewList()
-{   
-    int LenList = new Random().Next(3,9);
-    int[] list = new int[LenList];
-    for (int i = 0; i < list.Length; i++)
-    {
-        list[i] = new Random().Next(1,9);
+// int[]  NewList()
+// {   
+//     int LenList = new Random().Next(3,9);
+//     int[] list = new int[LenList];
+//     for (int i = 0; i < list.Length; i++)
+//     {
+//         list[i] = new Random().Next(1,9);
 
-    }
-    return list;
-}
+//     }
+//     return list;
+// }
 
-int[] PairedNumbers(int[] mass)
-{   
-    int len = 0;
-    if(mass.Length % 2 == 0)
-    {
-        len = mass.Length / 2;
-    }
-    else
-    {
-        len = mass.Length / 2 + 1;
-    }
-    int[] newMass = new int[len];
-    int indexA = 0;
-    int indexB = mass.Length - 1; 
-    for (int i = 0; i < len; i++)
-    {
-        newMass[i] = mass[indexA] * mass[indexB];
-        indexA += 1;
-        indexB -= 1;
-    }
-    if(mass.Length % 2 != 0)
-    {
-        newMass[newMass.Length / 2 + 1] = Convert.ToInt32(Math.Sqrt(newMass[newMass.Length / 2 + 1]));
-    }
+// int[] PairedNumbers(int[] mass)
+// {   
+//     int len = 0;
+//     if(mass.Length % 2 == 0)
+//     {
+//         len = mass.Length / 2;
+//     }
+//     else
+//     {
+//         len = mass.Length / 2 + 1;
+//     }
+//     int[] newMass = new int[len];
+//     int indexA = 0;
+//     int indexB = mass.Length - 1; 
+//     for (int i = 0; i < len; i++)
+//     {
+//         newMass[i] = mass[indexA] * mass[indexB];
+//         indexA += 1;
+//         indexB -= 1;
+//     }
+//     if(mass.Length % 2 != 0)
+//     {
+//         newMass[newMass.Length / 2 + 1] = Convert.ToInt32(Math.Sqrt(newMass[newMass.Length / 2 + 1]));
+//     }
 
-    return newMass;
-}
+//     return newMass;
+// }
 
+
+//// Задача 38
+
+// int[] array = NewList();
+// Console.WriteLine($"Разница минимального и максимального значения в списке :[{String.Join(" , ", array)}], будет = {String.Join(" , ", DiffMinAndMax(array))}");
+
+
+
+// ////-----------------------------Методы-------------------------
+// int[]  NewList()
+// {   
+//     int LenList = new Random().Next(3,10);
+//     int[] list = new int[LenList];
+//     for (int i = 0; i < list.Length; i++)
+//     {
+//         list[i] = new Random().Next(-10,10);
+
+//     }
+//     return list;
+// }
+// int DiffMinAndMax(int[] mass)
+// {
+//     int max = 0;
+//     int min = 0;
+    
+//     foreach(int i in array)
+//     {
+//         if(i > max)
+//         {
+//             max = i;
+//         }
+//         if(i < min)
+//         {
+//             min = i;
+//         }
+//     }
+//     int diff = max - min;
+//     return diff;
+// }
