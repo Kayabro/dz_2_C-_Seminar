@@ -21,14 +21,14 @@
 // Задача 43:
 
 int[] mass = NewList();
-int[] sort = SortList(mass);
-// Console.WriteLine($"Отсортированный список :[{String.Join(" , ", mass)}], будет :[{String.Join(" , ", SortList(mass) )}]");
-Console.WriteLine($" [{String.Join(" ," , sort)}]");
+Console.WriteLine($"Изначальный список:[{String.Join(" , ", mass) }], отсортированный список:[{String.Join(" ," , SortList(mass))}]");
+// int[] sort = SortList(mass);
+// Console.WriteLine($"Отсортированный список:[{String.Join(" ," , sort)}]");
 
 // ////-----------------------------Методы-------------------------
 int[]  NewList()
 {   
-    int LenList = new Random().Next(6,30);
+    int LenList = new Random().Next(6,11);
     int[] list = new int[LenList];
     for (int i = 0; i < list.Length; i++)
     {
@@ -36,12 +36,20 @@ int[]  NewList()
     }
     return list;
 }
-
-
-int[] SortList(int[] list)
+ 
+int[] SortList(int []list)
 {
-    
-
+    for (int i = 0; i < list.Length; i++)
+    {
+            for (int j = 0; j < list.Length - 1; j++)
+            {
+                if (list[j] > list[j + 1])
+                {
+                int curr = list[j];
+                list[j] = list[j + 1];
+                list[j + 1] = curr;
+                }
+            }
+    }
+    return list;
 }
-
-
