@@ -77,19 +77,19 @@ void PrintArray(int[,] array)               // Выводит в консоль 
 
 
 void SearchByIndex(int[,] array, int line, int vertical)
-{
+{   
+    bool h = false;
     for (int i = 0; i < array.GetLength(0); i++)
-    {   
-        int counter = 0;
+    {
         for (int j = 0; j < array.GetLength(1); i++)
         {
             if(i == line && j == vertical)
             {
-                Console.WriteLine(array[i, j]);
-                break;
+                h = true;
             }
-        
         }
+        if(h ==  true){Console.WriteLine(array[line, vertical]);}
+        else{Console.WriteLine("Такой цифры нет");}
     }
     
 }
