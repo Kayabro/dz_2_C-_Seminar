@@ -10,9 +10,9 @@
 
 // //---------------------------Методы -----------------------
 
-// double[,]  NewList(int line, int vertical)      // Создает двумерный массив, заполненный вещественными числами, с указанным кол-вом строк и линий
+//int[,]  NewList(int line, int vertical)      // Создает двумерный массив, заполненный вещественными числами, с указанным кол-вом строк и линий
 // {   
-//     double[,] list = new double[line, vertical];
+//    int[,] list = newint[line, vertical];
 //     for (int i = 0; i < line; i++)
 //     {   
 //         for(int j = 0; j < vertical; j ++)
@@ -23,7 +23,7 @@
 //     return list;
 // }
 
-// void PrintArray(double[,] array)               // Выводит в консоль двумерный массив
+// void PrintArray(intint[,] array)               // Выводит в консоль двумерный массив
 // {
 //     for (int i = 0; i < array.GetLength(0); i++)
 //     {
@@ -96,4 +96,56 @@
 
 
 
+////Задача 52
 
+// int[,] list = NewList();
+// Console.WriteLine($"Суммой чисел каждого стобца списка :");
+// PrintArray(list);
+// Console.WriteLine();
+// Console.WriteLine($"Будет [{String.Join(" , ", ArithmeticMean(list))}]");
+
+// //---------------------------Методы -----------------------
+
+// int[,]  NewList()      // Создает двумерный массив, заполненный числами.
+// {   
+//     int line = new Random().Next(3, 9);
+//     int vertical = new Random().Next(3, 9);
+//     int[,] list = new int[line, vertical];
+//     for (int i = 0; i < line; i++)
+//     {   
+//         for(int j = 0; j < vertical; j ++)
+//         {
+//             list[i, j] = new Random().Next(1, 9) ;
+//         }
+//     }
+//     return list;
+// }
+
+// void PrintArray(int[,] array)               // Выводит в консоль  массив
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         Console.Write("[ ");
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             Console.Write(array[i, j] + ", ");
+//         }
+//         Console.Write("]");
+//         Console.WriteLine("");
+//     }
+// }
+
+// double[]  ArithmeticMean(int[,] list)     // Находит среднее арифметичское каждого столбца двухмерного массива
+// {   
+//     double[]  arithmetic= new double[list.GetLength(1)];
+//     for(int i = 0; i < list.GetLength(1); i++)
+//     {
+//         for(int j = 0; j < list.GetLength(0); j ++)
+//         {
+//             arithmetic[i] += list[j, i];
+//         }
+//     arithmetic[i] = Math.Round(arithmetic[i] / (list.GetLength(0)), 2);
+//     }
+
+//     return arithmetic ;
+// }
