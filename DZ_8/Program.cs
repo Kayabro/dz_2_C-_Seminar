@@ -119,3 +119,68 @@
 //     }
 //     return counter;
 // }
+
+
+// // Задача 58:
+
+// int[,] list1 = NewList();
+// int[,] list2 = NewList();
+// PrintArray(list1);
+// Console.WriteLine("Умноженная на ");
+// PrintArray(list2);
+// int[,] result = GetMultiplicationMatrix(list1, list2);
+// Console.WriteLine("Результат");
+// PrintArray(result);
+
+
+
+// // //---------------------------Методы -----------------------
+
+// int[,]  NewList()      // Создает двумерный массив, заполненный числами.
+// {   
+//     int line = new Random().Next(2, 2);
+//     int vertical = new Random().Next(2, 2);
+//     int[,] list = new int[line, vertical];
+//     for (int i = 0; i < line; i++)
+//     {   
+//         for(int j = 0; j < vertical; j ++)
+//         {
+//             list[i, j] = new Random().Next(1, 9) ;
+//         }
+//     }
+//     return list;
+// }
+
+
+
+// void PrintArray(int[,] array)               // Выводит в консоль  массив
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         Console.Write("[ ");
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             Console.Write(array[i, j] + ", ");
+//         }
+//         Console.Write("]");
+//         Console.WriteLine("");
+//     }
+// }
+
+// int [,] GetMultiplicationMatrix(int[,] arrayA, int[,] arrayB)
+// {
+//     {
+//       int[,] arrayC = new int[arrayA.GetLength(0), arrayB.GetLength(1)];
+//       for (int i = 0; i < arrayA.GetLength(0); i++)
+//       {
+//         for (int j = 0; j < arrayB.GetLength(1); j++)
+//         {
+//           for (int k = 0; k < arrayA.GetLength(1); k++)
+//           {
+//             arrayC[i, j] += arrayA[i, k] * arrayB[k, j];
+//           }
+//         }
+//       }
+//       return arrayC;
+//     }
+// }
